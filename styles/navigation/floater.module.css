@@ -1,0 +1,64 @@
+.main{
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    align-items: center;
+}
+
+
+.text1{
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 5px;
+     margin: 0px;
+}
+
+.text2{
+    font-size: 20px;
+    color: rgb(252, 227, 0);
+    padding: 0px 10px;
+    margin: 0px;
+}
+
+.socialMediaContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 40px;
+    margin: 0px 10px;
+    padding: 5px;
+}
+
+.donateButton{
+    color: #fff;
+    font-size: 20px;
+    background-color: red;
+    margin: 0px 20px;
+    padding: 15px 20px;
+    border-radius: 10px 10px 0px 0px; /*TL TR BR BL*/
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+   
+
+    .text1{
+       display: none;
+    }
+    
+    .text2{
+        display: none;
+    }
+
+
+
+}

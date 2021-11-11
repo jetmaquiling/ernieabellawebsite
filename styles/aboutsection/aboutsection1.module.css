@@ -1,0 +1,109 @@
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 200px 100px 100px 100px;
+    background-size: cover;
+    background-color: #0C2763;
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    background-image: url("/Images/background1.png");
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.imageBox{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+}
+
+.image{
+    width: 100%;
+    padding: 30px;
+}
+
+.contentBox{
+    width: 65%;
+    padding: 18px;
+}
+
+.title{
+    color: #fff;
+    margin: 0px;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.underline{
+    width: 60px;
+    background-color: red;
+    height: 5px;
+    border-radius: 40px;
+}
+
+.textBox{
+    font-size: 18px;
+    margin-top: 30px;
+    color: #fff;
+}
+
+@media only screen and (max-width: 1000px) {
+    .main{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 200px 100px 100px 100px;
+        background-image: none;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .image{
+        width: 300px;
+        padding: 30px;
+    }
+
+    .imageBox{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .contentBox{
+        width: 100%;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    .main{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 100px 10px 100px 10px;
+        background-image: none;
+    }
+    .imageBox{
+        
+    }
+
+    .image{
+        width: 250px;
+        padding: 30px;
+    }
+
+
+}

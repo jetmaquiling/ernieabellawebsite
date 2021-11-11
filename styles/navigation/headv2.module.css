@@ -1,0 +1,21 @@
+.main{
+    width: 100%;
+    display: flex;
+    transition: 0.5s;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    animation-name: startup;
+    animation-duration: 2.0s;
+}
+
+@keyframes startup {
+    0%   {
+        transform: translateY(-20px);
+       opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+  }

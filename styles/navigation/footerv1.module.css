@@ -1,0 +1,149 @@
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0C2763;
+}
+
+
+.title{
+    font-size: 50px;
+    color: rgb(54, 54, 54);
+    margin: 0px 0px 20px 0px;
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.section{
+    width: 30%;
+    display: flex;
+    height: 100%;
+    font-size: 30px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.section1{
+   flex-direction: column;
+   padding: 30px; 
+   
+}
+
+.label{
+    font-size: 25px;
+    margin: 0px;
+}
+
+.text{
+    font-size: 15px;
+    margin: 0px;
+}
+
+.socialMediaContainer{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.socialBox{
+    background-color: #0043c9;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.socialBox:hover{
+    background-color: #012a7e;
+    transition: 0.3s;
+}
+
+
+.section2{
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    width: 100%;
+}
+
+.section3{
+    padding: 30px; 
+    flex-direction: column;
+}
+
+
+.buttonFont{
+    background-color: #ce1127;
+    text-align: center;
+    margin: 0px;
+    padding: 10px 0px;
+    font-size: 20px;
+}
+
+
+.foooterv2{
+    background-color: #ce1127;
+    display: flex;
+    justify-content: center;
+}
+
+.copywrite{
+    margin: 0px;
+    padding: 40px 0px;
+    color: rgba(255, 255, 255, 0.507);
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    .main{
+        flex-direction: column;
+    }
+
+    .section{
+        width: 100%;
+        padding: 50px;
+        text-align: center;
+    }
+    
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .socialMediaContainer{
+        justify-content: space-around;
+        margin: 20px 0px;
+    }
+    
+    .section{
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .socialBox{
+        padding: 10px;
+    }
+
+    .copywrite{
+        text-align: center;
+        font-size: 10px;
+        padding: 40px 0px 80px 0px ;
+    }
+    
+
+}
