@@ -7,7 +7,7 @@ import HeadV1 from '@/components/head/headv1'
 import Link from 'next/link'
 import Floater from '../navigation/floater'
 
-export default function HeadV2({title="ROCK Token", root="/"}) {
+export default function HeadV2({backdrop=false}) {
   const [pos, setPos] = React.useState("top")
   const [open, setOpen] = React.useState("top")
 
@@ -25,9 +25,10 @@ export default function HeadV2({title="ROCK Token", root="/"}) {
 
   return (
     <div  className={style.main}>
-      <HeadV1 pos={pos} open={open} setOpen={setOpen} title={title} root={root}/> 
+      <HeadV1 pos={pos} open={open} setOpen={setOpen} /> 
       <NavigationV1 pos={pos} open={open} setOpen={setOpen}/>
-      <Floater/>
+      <div className={backdrop && style.backdrop}/>
+      <Floater backdrop={backdrop}/>
     </div>
   )
 }

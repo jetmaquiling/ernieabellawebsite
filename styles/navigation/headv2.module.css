@@ -5,8 +5,14 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    animation-name: startup;
-    animation-duration: 2.0s;
+    /* animation-name: startup;
+    animation-duration: 2.0s; */
+}
+
+.backdrop{
+    width: 100%;
+    background-color: #0C2763;
+    height: 110px;
 }
 
 @keyframes startup {
@@ -19,3 +25,19 @@
         opacity: 1;
     }
   }
+
+@media only screen and (max-width: 900px) {
+    .backdrop{
+        width: 100%;
+        display: flex;
+        transition: 0.5s;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        animation-name: startup;
+        animation-duration: 2.0s;
+        background-color: #0C2763;
+        height: 75px;
+    }
+    
+}

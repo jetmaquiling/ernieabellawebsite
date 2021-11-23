@@ -14,10 +14,10 @@ const HeadV1 = ({pos, open, setOpen}) => {
   return (
     <div  className={pos === "top" ? style.main : style.off} >
         <div className={pos === "top" ? style.navbar : style.navbarFixed}>
-          <div className={pos === "top" ? style.navbar1 : style.navbar1Fixed}>
+          <div className={pos === "top" ? style.navbar1 : style.navbar1Fixed} >
                 <Link href="/">
              
-                    <img  src="/Logo/LogoWhite.png" className={style.logo} alt="logo" />
+                    <img  src="/Logo/LogoWhite.png" className={style.logo} alt="logo" onMouseLeave={(e) => {e.target.src = "/Logo/LogoWhite.png"}}  onMouseOver={(e) => {e.target.src = "/Logo/LogoDark.png"}} />
                   
                   
                 </Link>
@@ -44,7 +44,7 @@ const HeadV1 = ({pos, open, setOpen}) => {
                 </div>
                 </Link>
 
-                <Link  href="/info/about">
+                <Link  href="/join">
                 <div  className={style.buttonBox} >
                   <h4 className={style.buttonFont}>Get Involved</h4>
                 </div>
@@ -52,15 +52,11 @@ const HeadV1 = ({pos, open, setOpen}) => {
 
                 <Link  href="/info/about">
                 <div  className={style.buttonBox} >
-                  <h4 className={style.buttonFont}>Endorsement</h4>
+                  <h4 className={style.buttonFont}>Articles</h4>
                 </div>
                 </Link>
 
-                <Link  href="/info/about">
-                <div  className={style.buttonBox} >
-                  <h4 className={style.buttonFont}>Store</h4>
-                </div>
-                </Link>
+             
                 
                 
             </div>

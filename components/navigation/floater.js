@@ -2,32 +2,95 @@ import * as React from "react"
 import * as style from "@/styles/navigation/floater.module.css"
 import Link from 'next/link'
 import CloseIcon from '@material-ui/icons/Close';
-
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
 
-const Floater = ({pos,open, setOpen}) => {
+
+function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    let expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  }
+
+function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for(let i = 0; i <ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+        }
+    }
+    return ca;
+}
+
+
+
+
+const Floater = ({backdrop=false}) => {
+    const [auth, setAuth] = React.useState(false)
+    
+    function checkCookie() {
+        let cookie = getCookie("cookie_authorized")
+        console.log(cookie)
+        if(cookie == 0){
+            setAuth(false)
+        }else{
+            setAuth(true)
+        }
+    }
+
+    React.useEffect(() => {
+        checkCookie()
+    }, [])
+
+    function acceptCookie() {
+        setCookie("cookie_authorized", "USER_ACCEPTED", 3)
+        setAuth(true)
+    }
 
   return (
     <div className={style.main}>
-        <h3 className={style.text1}>BAGONG PILIPINO </h3>
-        <h3 className={style.text2}>=</h3>
-        <h3 className={style.text1}>BAGONG PILIPINAS</h3>
-        <div className={style.socialMediaContainer}>
-            <div className={style.socialBox}>
-                <FacebookIcon style={{color: "#000", fontSize: '20px'}}/>
-            </div>
 
-            <div className={style.socialBox}>
-                <InstagramIcon style={{color: "#000", fontSize: '20px'}}/>
-            </div>
+        {auth ?
+        <div className={style.auth}>
+            <h3 className={!backdrop ? style.text1 : style.offText}>BAGONG PILIPINO </h3>
+            <h3 className={!backdrop ? style.text2 : style.offText}>=</h3>
+            <h3 className={!backdrop ? style.text1 : style.offText}>BAGONG PILIPINAS</h3>
+            <div className={style.socialMediaContainer}>
+                <div className={style.socialBox}>
+                    <FacebookIcon style={{color: "#000", fontSize: '20px'}}/>
+                </div>
 
-            <div className={style.socialBox}>
-                <TwitterIcon style={{color: "#000", fontSize: '20px'}}/>
+                <div className={style.socialBox}>
+                    <InstagramIcon style={{color: "#000", fontSize: '20px'}}/>
+                </div>
+
+                <div className={style.socialBox}>
+                    <TwitterIcon style={{color: "#000", fontSize: '20px'}}/>
+                </div>
             </div>
+            <h3 className={style.donateButton}>DONATE</h3>
         </div>
-        <h3 className={style.donateButton}>DONATE</h3>
+        :
+        <div className={style.off} onClick={acceptCookie}>
+            <h6 className={style.cookieText}>ernieabella.com uses cookies to give you a better navigation experience on our site. As soon as you continue the tour, we assume you accept the cookies policy. Learn more about the cookie policy we use here.</h6>
+            <h6 className={style.cookieButton}>
+                I ACCEPT
+            </h6>
+            <CloseIcon style={{color:"#fff", fontSize: '30px', cursor: "pointer"}}/>
+        </div>
+        }
+        
+
+        
+        
     </div>
     
   )
