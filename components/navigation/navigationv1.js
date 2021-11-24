@@ -30,11 +30,11 @@ const NavigationV1 = ({pos,open, setOpen}) => {
 
               
               <div  className={style.buttonBox}>
-                <Link href="/info/about"><h4 className={style.h4animate}>Campaign Updates</h4></Link>
+                <Link href="/join"><h4 className={style.h4animate}>Join The Advocacy</h4></Link>
               </div>
 
               <div  className={style.buttonBox}>
-                <Link href="/info/about"><h4 className={style.h4animate}>Get Involved</h4></Link>
+                <Link href="/join"><h4 className={style.h4animate}>Get Involved</h4></Link>
               </div>
 
              
@@ -53,7 +53,7 @@ const NavigationV1 = ({pos,open, setOpen}) => {
              
 
               <div  className={style.buttonBox}>
-                <Link href="/info/about"><h4 className={style.h4animate}>Edorsement</h4></Link>
+                <Link href="/info/about"><h4 className={style.h4animate}>Articles</h4></Link>
               </div>
 
               <div  className={style.specialbuttonBox}>
@@ -67,7 +67,7 @@ const NavigationV1 = ({pos,open, setOpen}) => {
 
         </div>
         <div className={style.rightsBox}>
-                    <p className={style.rightsText}>2021 © PHBWORX.COM | All rights reserved</p>
+                    <p className={style.rightsText}>2021 © ErnieAbella.COM | All rights reserved</p>
         </div>
 
         

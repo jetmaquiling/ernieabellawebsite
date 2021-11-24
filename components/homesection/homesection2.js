@@ -12,7 +12,7 @@ const HomeSection2 = () => {
                <h2 className={style.title}>Ways to Get Involved</h2>
                <div className={style.buttonContainer}>
                    <div className={`${style.buttonBox} ${style.buttonBox1}`}>
-                        <h4 className={style.buttonFont}>Join The Campaign</h4>
+                        <h4 className={style.buttonFont}>Join The Advocacy</h4>
                    </div>
 
                    <div className={`${style.buttonBox} ${style.buttonBox2}`}>

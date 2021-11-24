@@ -17,8 +17,8 @@ const AboutSection1 = () => {
              <div  className={style.contentBox}>
                 <h6  className={style.title}>ABOUT</h6>
                 <div  className={style.underline}/>
-                <div  className={style.textBox}>ERNESTO "ERNIE" CORPUZ ABELLA IS A FILIPINO BUSINESSMAN, WRITER, AND FORMER EVANGELIST WHO SERVED IN PRESIDENT RODRIGO DUTERTE'S ADMINISTRATION AS PRESIDENTIAL SPOKESPERSON (2016-2017AND UNDERSECRETARY FOR STRATEGIC COMMUNICATIONS AND RESEARCH OF THE DEPARTMENT OF FOREIGN AFFAIRS (2017-2021).[2]</div>
-                <div  className={style.textBox}>BEFORE JOINING THE GOVERNMENT, HE WAS AN EXECUTIVE WITH A DAVAO CITY-BASED AGRICULTURAL PRODUCTS MANUFACTURER AND A LOCAL COOPERATIVE WHICH HE CO-FOUNDED. HE ALSO ESTABLISHED A SCHOOL IN DAVAO AND WAS A COLUMNIST FOR LOCAL NEWSPAPER SUNSTAR DAVAO.</div>
+                <div  className={style.textBox}>Ernesto "Ernie" Corpuz Abella is a Filipino businessman, writer, and former evangelist who served in President Rodrigo Duterte's administration as Presidential Spokesperson (2016-2017) and Undersecretary for Strategic Communications and Research of the Department of Foreign Affairs (2017-2021).</div>
+                <div  className={style.textBox}>Before joining the government, he was an executive with a Davao city-based agricultural products manufacturer and a local cooperative which he co-founded. He also established a school in Davao and was a columnist for local newspaper Sunstar Davao.</div>
              </div>
 
 

@@ -6,6 +6,7 @@ import styles from  "@/styles/blogsection/blog.module.css"
 import IconButton from '@material-ui/core/IconButton';
 import config from '@/config/configuration.json';
 import axios from 'axios';
+import Link from 'next/link'
 import {useRouter} from 'next/router';
 import Typography from '@material-ui/core/Typography';
 import moment from 'moment';
@@ -18,7 +19,7 @@ import Head from 'next/head'
 import HeadV2 from '@/components/head/headv2';
 import FooterV2 from '@/components/footer/footerv2';
 import FooterV1 from './../../components/footer/footerv1';
-
+import qs from 'qs'
 
 const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
 
@@ -29,7 +30,7 @@ export default function BlogPage() {
     console.log(id)
     const [blog , setBlog] = React.useState({});
     const [link, setLink] = React.useState(false);
-
+    const [feature, setFeature] = React.useState([])
 
   
     useEffect(() => {
@@ -39,6 +40,7 @@ export default function BlogPage() {
 
 
     useEffect(() => {
+        setBlog({})
         async function getBlog() { 
             try{
                 const {data} = await axios.get(`${config.SERVER_URL}/article-ernie-abellas/${id}`);
@@ -49,10 +51,23 @@ export default function BlogPage() {
                     thumbnail: data.thumbnail_image.formats.thumbnail.url,
                     urltitle : url
                 })
+
+                
+
             }catch(err){
                 console.log(err)
             }
-            
+
+
+            try{
+                const query = qs.stringify({ _where: { _or:[{"section_position": "feature"}]} });
+                const newdata = await axios.get(`${config.SERVER_URL}/article-ernie-abellas?${query}`);
+                console.log("nEw Data",newdata.data)
+                setFeature(newdata.data);
+
+            }catch(err){
+                console.log("second request",err)
+            }
             
         }
         getBlog()
@@ -96,20 +111,35 @@ export default function BlogPage() {
                     </div>
 
                     <div  className={styles.sectionB}>
-                 
+                        {feature.map((article, index)=>{
+                            return (
+                                <div key={index} className={styles.featureBox}>
+                                    <h6 className={styles.featureSubject}>
+                                        {article.subject}
+                                    </h6>
+                                    <h4 className={styles.featureTitle}>
+                                        {article.main_title}
+                                    </h4>
+                                    <Link href={`/blog/${article.id}`}><h3 className={styles.featureButton}>Read Article</h3></Link>
+                                </div>  
+                                    )
+                        })}
+                        
+
+                        
                     </div>
                 </div>
                 
                 <FooterV1/>
+               
             </div>
         );
     }else{
         return(
             <div className={styles.root} ref={myRef}>
                 <div  className={styles.main}>
-                    <Typography variant="h6" >
-                        <Skeleton />
-                    </Typography>
+                    
+                      
                     <Typography variant="h2" >
                         <Skeleton />
                     </Typography>
@@ -126,9 +156,12 @@ export default function BlogPage() {
                         <Skeleton />
                     </Typography>
                     
-                    <Skeleton variant="circle" width={40} height={40} style={{margin: '10px'}}/>
+                    
                     <Skeleton variant="rect" style={{width: '100%', height: '300px'}} />
 
+                    <Typography variant="h2" >
+                        <Skeleton />
+                    </Typography>
                     <Typography variant="h2" >
                         <Skeleton />
                     </Typography>
