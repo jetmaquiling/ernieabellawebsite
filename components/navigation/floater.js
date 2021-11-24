@@ -79,12 +79,12 @@ const Floater = ({backdrop=false}) => {
             <h3 className={style.donateButton}>DONATE</h3>
         </div>
         :
-        <div className={style.off} onClick={acceptCookie}>
+        <div className={style.off} >
             <h6 className={style.cookieText}>ernieabella.com uses cookies to give you a better navigation experience on our site. As soon as you continue the tour, we assume you accept the cookies policy. Learn more about the cookie policy we use here.</h6>
-            <h6 className={style.cookieButton}>
+            <h6 className={style.cookieButton} onClick={acceptCookie}>
                 I ACCEPT
             </h6>
-            <CloseIcon style={{color:"#fff", fontSize: '30px', cursor: "pointer"}}/>
+            <CloseIcon style={{color:"#fff", fontSize: '30px', cursor: "pointer"}} onClick={()=>{setAuth(true)}}/>
         </div>
         }
         

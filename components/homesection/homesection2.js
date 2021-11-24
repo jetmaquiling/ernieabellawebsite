@@ -11,17 +11,24 @@ const HomeSection2 = () => {
            <div className={style.contentBox}>
                <h2 className={style.title}>Ways to Get Involved</h2>
                <div className={style.buttonContainer}>
-                   <div className={`${style.buttonBox} ${style.buttonBox1}`}>
-                        <h4 className={style.buttonFont}>Join The Advocacy</h4>
-                   </div>
+                   <Link href="/join">
+                        <div className={`${style.buttonBox} ${style.buttonBox1}`}>
+                                <h4 className={style.buttonFont}>Join The Advocacy</h4>
+                        </div>
+                    </Link >
 
-                   <div className={`${style.buttonBox} ${style.buttonBox2}`}>
-                        <h4 className={style.buttonFont}>Pitch in</h4>
-                    </div>
+                    <Link href="/join">
+                        <div className={`${style.buttonBox} ${style.buttonBox2}`}>
+                            <h4 className={style.buttonFont}>Pitch in</h4>
+                        </div>
+                    </Link >
 
-                    <div className={`${style.buttonBox} ${style.buttonBox3}`}>
-                        <h4 className={style.buttonFont}>Stay up to Date</h4>
-                    </div>
+                    <Link href="/join">
+                        <div className={`${style.buttonBox} ${style.buttonBox3}`}>
+                            <h4 className={style.buttonFont}>Stay up to Date</h4>
+                        </div>
+                    </Link >
+
                </div>
            </div>
         </div>
