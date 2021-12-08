@@ -11,21 +11,21 @@ const HomeSection2 = () => {
            <div className={style.contentBox}>
                <h2 className={style.title}>Ways to Get Involved</h2>
                <div className={style.buttonContainer}>
-                   <Link href="/join">
+                   <Link href="https://docs.google.com/forms/d/1yoGOHrJUBUwfuhIeJDm18CGscvCLmGPlN-yno1-tQ-I/viewform?fbclid=IwAR3H0zii6wp9ukTk1OIWkntS8IbBySy2Mab2J0qjphUfefSKqWdDate7uuM&edit_requested=true">
                         <div className={`${style.buttonBox} ${style.buttonBox1}`}>
-                                <h4 className={style.buttonFont}>Join The Advocacy</h4>
+                            <img src="/Images/JOIN.jpg" className={style.imageBox}/>
                         </div>
                     </Link >
 
                     <Link href="/info/program">
                         <div className={`${style.buttonBox} ${style.buttonBox2}`}>
-                            <h4 className={style.buttonFont}>Priorities</h4>
+                            <img src="/Images/PRIORITIES.jpg" className={style.imageBox}/>
                         </div>
                     </Link >
 
-                    <Link href="/join">
+                    <Link href="/blog">
                         <div className={`${style.buttonBox} ${style.buttonBox3}`}>
-                            <h4 className={style.buttonFont}>Press</h4>
+                            <img src="/Images/PRESS.jpg" className={style.imageBox}/>
                         </div>
                     </Link >
 

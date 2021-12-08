@@ -5,8 +5,8 @@ import HomeSection1 from '@/components/homesection/homesection1'
 import HomeSection2 from '@/components/homesection/homesection2'
 import HomeSection3 from '@/components/homesection/homesection3'
 import HomeSection4 from '@/components/homesection/homesection4'
+import NewSection1 from '@/components/newsection/newsection1'
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from './home.module.css'
 
 export default function Home() {

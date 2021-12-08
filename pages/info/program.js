@@ -4,7 +4,6 @@ import FooterV2 from '@/components/footer/footerv2'
 import HeadV2 from '@/components/head/headv2'
 import ProgramSection1 from '@/components/programsection/programsection1'
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../home.module.css'
 
 export default function Program() {

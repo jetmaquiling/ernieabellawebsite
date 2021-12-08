@@ -2,7 +2,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React ,{useState, useCallback, forwardRef}from 'react'
 import Link from 'next/link';
-import Image from 'next/image';
 import Head from 'next/head'
 import style from '@/styles/joinsection/joinsection1.module.css'
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';

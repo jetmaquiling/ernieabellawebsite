@@ -38,13 +38,13 @@ const HeadV1 = ({pos, open, setOpen}) => {
                 </div>
                 </Link>
 
-                <Link href="/info/about">
+                <Link href="/blog">
                 <div  className={style.buttonBox}  >
                   <h4 className={style.buttonFont}>News</h4>
                 </div>
                 </Link>
 
-                <Link  href="/join">
+                <Link  href="https://docs.google.com/forms/d/1yoGOHrJUBUwfuhIeJDm18CGscvCLmGPlN-yno1-tQ-I/viewform?fbclid=IwAR3H0zii6wp9ukTk1OIWkntS8IbBySy2Mab2J0qjphUfefSKqWdDate7uuM&edit_requested=true">
                 <div  className={style.buttonBox} >
                   <h4 className={style.buttonFont}>Get Involved</h4>
                 </div>

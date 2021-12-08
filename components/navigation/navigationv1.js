@@ -5,14 +5,14 @@ import CloseIcon from '@material-ui/icons/Close';
 
 
 
-const NavigationV1 = ({pos,open, setOpen}) => {
+const NavigationV1 = ({pos,open, setOpen, header}) => {
   
   const [drawer, setDrawer] = React.useState(null)
 
   return (
     <div className={open  ? style.off : style.main}>
 
-        <div className={style.navbar}>
+        {header && <div className={style.navbar}>
           <div className={style.navbar1}>
               <div className={style.tinylogoToken}>
                 <img src={'/Logo/logowhite.png'} alt="Logo"  className={style.logoToken}/>
@@ -24,7 +24,7 @@ const NavigationV1 = ({pos,open, setOpen}) => {
           </div>
           
           
-        </div>
+        </div> }
 
         <div className={style.navbar2}>
 

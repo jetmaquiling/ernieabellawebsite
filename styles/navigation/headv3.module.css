@@ -39,6 +39,10 @@
     background-color: rgba(11, 32, 223, 0.603);
 }
 
+.navButton{
+    display: none;
+}
+
 
 
 .level2{
@@ -59,4 +63,45 @@
 
 .subjectText:hover{
     text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .level2{
+        display: none;
+    }
+    .containerSide{
+        display: none;
+    }
+
+    .logo{
+        width: 200px;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    .containerLogo{
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .navButton{
+        width: 50%;
+        display: flex;
+        margin: 10px;
+        justify-content: flex-end;
+    }
+
+}
+
+
+@media only screen and (max-width: 500px) {
+    .logo{
+        width: 150px;
+        margin: 5px 10px;
+        cursor: pointer;
+    }
+
+
 }

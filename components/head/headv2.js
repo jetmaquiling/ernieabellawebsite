@@ -26,7 +26,7 @@ export default function HeadV2({backdrop=false}) {
   return (
     <div  className={style.main}>
       <HeadV1 pos={pos} open={open} setOpen={setOpen} /> 
-      <NavigationV1 pos={pos} open={open} setOpen={setOpen}/>
+      <NavigationV1 header={true} pos={pos} open={open} setOpen={setOpen}/>
       <div className={backdrop && style.backdrop}/>
       <Floater backdrop={backdrop}/>
     </div>

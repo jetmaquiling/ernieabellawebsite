@@ -7,6 +7,7 @@ import qs from 'qs'
 import config from '@/config/configuration.json';
 import moment from 'moment';
 import axios from 'axios';
+import NewSection1 from "../newsection/newsection1";
 
 
 const HomeSection4 = () => {
@@ -45,60 +46,9 @@ const HomeSection4 = () => {
 
   return (
         <div className={style.main}>
-            <h2 className={style.title}>Articles</h2>
-           <div className={style.mainContainer}>
-                <div className={style.imageBox}>
-                    <img className={style.image} src={mainArticle.clipboard} alt="Ernie Abella"/>
-                </div>
-
-                <div className={style.articleBox}>
-                   
-                    <h6 className={style.category}>
-                        {mainArticle.subject}
-                        
-                    </h6>
-                   
-                    <h3 className={style.headlineSpecial}>
-                        <h6 className={style.time}>
-                            Published {moment(mainArticle.published_at).fromNow()} ...
-                        </h6>
-                        {mainArticle.main_title}
-                        
-                    </h3>
-                    
-
-                    <Link href={`/blog/${mainArticle.id}`}><h4 className={style.button}>Read Story <ArrowRightAltIcon style={{color: "#FF0000", fontSize: '40px'}}/> </h4></Link>
-                </div>
-           </div>
-
-           <div className={style.subContainer}>
-
-                {feature.map((article, index)=>{
-               
-                    if(index <= 2){
-                        return (
-                            <div key={index} className={style.subArticleBox}>
-                                
-                                <h6 className={style.category}>
-                                    {article.subject}
-                                </h6>
-                                
-                                <h3 className={style.headline}>
-                                    <h6 className={style.time}>
-                                        Published {moment(article.published_at).fromNow()} ...
-                                    </h6>
-                                    {article.main_title}
-                                </h3>
-            
-                                <Link href={`/blog/${article.id}`}><h4 className={style.button}>Read Story <ArrowRightAltIcon style={{color: "#FF0000", fontSize: '40px'}}/> </h4></Link>
-                            </div>
-                        )
-                    }
-                    
-                })}
-               
-           </div>
-
+            <h2 className={style.title}>News and Updates</h2>
+            <NewSection1/>
+            <div className={style.buttonContainer} ><Link href="/blog"><h4 className={style.button}>See More </h4></Link></div>
         </div>
   )
   

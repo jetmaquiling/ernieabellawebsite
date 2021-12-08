@@ -40,10 +40,11 @@
     text-align: center;
     transition: 0.3s;
     color: #fff;
+    cursor: pointer;
 }
 
 .button:hover{
-    background-color: rgb(0, 65, 204);
+    background-color: rgb(0, 81, 255);
    transition: 0.3s;
 }
 

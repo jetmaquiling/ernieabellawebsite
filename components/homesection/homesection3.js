@@ -14,7 +14,7 @@ const HomeSection3 = () => {
            <div className={style.contentBox}>
                <h1 className={style.title}>Meet Ernie</h1>
                <p className={style.subTitle}>Ernesto Abella was formerly a Presidential Spokesperson, carrying the position with grace and professionalism. No undiplomatic, tactless accounts were communicated, nor were there any taunts or provocations delivered.</p>
-               <h4 className={style.button}>READ MORE</h4>
+               <Link href="/info/about" ><h4 className={style.button}>READ MORE</h4></Link>
            </div>
         </div>
   )
