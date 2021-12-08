@@ -32,9 +32,9 @@ const HeadV1 = ({pos, open, setOpen}) => {
                 </Link>
 
 
-                <Link href="/info/about">
+                <Link href="/info/program">
                 <div  className={style.buttonBox}   >
-                  <h4 className={style.buttonFont}>Priorities</h4>
+                  <h4 className={style.buttonFont}>Platform</h4>
                 </div>
                 </Link>
 
@@ -50,11 +50,7 @@ const HeadV1 = ({pos, open, setOpen}) => {
                 </div>
                 </Link>
 
-                <Link  href="/info/about">
-                <div  className={style.buttonBox} >
-                  <h4 className={style.buttonFont}>Articles</h4>
-                </div>
-                </Link>
+            
 
              
                 

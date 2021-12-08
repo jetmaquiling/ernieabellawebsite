@@ -17,15 +17,15 @@ const HomeSection2 = () => {
                         </div>
                     </Link >
 
-                    <Link href="/join">
+                    <Link href="/info/program">
                         <div className={`${style.buttonBox} ${style.buttonBox2}`}>
-                            <h4 className={style.buttonFont}>Pitch in</h4>
+                            <h4 className={style.buttonFont}>Priorities</h4>
                         </div>
                     </Link >
 
                     <Link href="/join">
                         <div className={`${style.buttonBox} ${style.buttonBox3}`}>
-                            <h4 className={style.buttonFont}>Stay up to Date</h4>
+                            <h4 className={style.buttonFont}>Press</h4>
                         </div>
                     </Link >
 

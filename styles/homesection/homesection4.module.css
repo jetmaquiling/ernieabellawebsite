@@ -161,6 +161,13 @@
     .headline{
         font-size: 18px;
         padding-bottom: 10px;
+        line-height: 25px;
+    }
+
+
+    
+    .headlineSpecial{
+        line-height: 30px;
     }
 
     .mainContainer{

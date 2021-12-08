@@ -1,0 +1,62 @@
+.main{
+    max-width: 1200px;
+    margin: 50px auto;
+
+}
+
+.label{
+    font-size: 25px;
+    text-align: center;
+}
+
+.articleContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.articleItem{
+    width: 25%;
+    padding: 10px;
+    cursor: pointer
+}
+
+.articleImage{
+    width: 100%;
+}
+
+.articleSubject{
+    color: rgb(99, 99, 99);
+    font-size: 12px;
+    margin: 5px 0px;
+}
+
+.articleTitle{
+    font-size: 15px;
+    line-height: 18px;
+    margin: 0px;
+}
+
+.articleTitle:hover{
+    text-decoration: underline;
+}
+
+
+
+@media only screen and (max-width: 800px){
+    .articleItem{
+        width: 50%;
+        padding: 10spx;
+        cursor: pointer
+    }
+
+    .articleTitle{
+        font-weight: 600;
+        line-height: 15px;
+    }
+
+    
+    .label{
+        font-size: 18px;
+        text-align: center;
+    }
+}

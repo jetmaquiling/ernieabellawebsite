@@ -9,7 +9,7 @@ import moment from 'moment';
 import axios from 'axios';
 
 
-const HomeSection4 = () => {
+const Article = () => {
     const [mainArticle, setMainArticle] = React.useState({})
     const [feature, setFeature] = React.useState([])
 
@@ -104,4 +104,4 @@ const HomeSection4 = () => {
   
 }
 
-export default HomeSection4
+export default Article

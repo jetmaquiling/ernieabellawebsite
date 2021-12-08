@@ -96,6 +96,7 @@
     background-color: #ce1127;
     display: flex;
     justify-content: center;
+    padding-bottom: 20px;
 }
 
 .copywrite{
