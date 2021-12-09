@@ -29,6 +29,7 @@
     font-size: 30px;
     color: #fff;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .section1{
@@ -38,7 +39,8 @@
 }
 
 .label{
-    font-size: 25px;
+    text-align: center;
+    font-size: 20px;
     margin: 0px;
 }
 

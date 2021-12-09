@@ -62,23 +62,7 @@ const AboutSection1 = () => {
 
            </div>
 
-           <div  className={style.container2}>
-                <div  className={style.contentBox2}>
-                    <h6  className={style.title}>BIO</h6>
-                    <div  className={style.underline2}/>
-                     
-                           {bio.map((data,index)=>{
-                              return (
-                                 <div key={index} className={style.textContainer}>
-                                    <FiberManualRecordIcon style={{color: '#fff'}}/>
-                                    <p className={style.textItem}>{data}</p>
-                                 </div> 
-                              )
-                           })}
-                           
-                     
-                </div>
-            </div>
+          
 
             <div  className={style.container2}>
                 <div  className={style.contentBox2}>
@@ -113,7 +97,7 @@ const AboutSection1 = () => {
 
             <div  className={style.container2}>
                 <div  className={style.contentBox2}>
-                    <h6  className={style.title}>ACADEMIC EXPERIENCE</h6>
+                    <h6  className={style.title}>Education</h6>
                     <div  className={style.underline2}/>
                         {academic.map((data,index)=>{
                            return (
@@ -125,6 +109,26 @@ const AboutSection1 = () => {
                         })}
                 </div>
             </div>
+
+
+            <div  className={style.container2}>
+                <div  className={style.contentBox2}>
+                    <h6  className={style.title}>BIO</h6>
+                    <div  className={style.underline2}/>
+                     
+                           {bio.map((data,index)=>{
+                              return (
+                                 <div key={index} className={style.textContainer}>
+                                    <FiberManualRecordIcon style={{color: '#fff'}}/>
+                                    <p className={style.textItem}>{data}</p>
+                                 </div> 
+                              )
+                           })}
+                           
+                     
+                </div>
+            </div>
+            
         </div>
   )
   

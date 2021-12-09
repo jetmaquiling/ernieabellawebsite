@@ -1,8 +1,7 @@
 .main{
     background-color: #0C2763;
     width: 100%;
-    position: sticky;
-    top: 0px;
+    position: fixed;
 }
 
 .level1{

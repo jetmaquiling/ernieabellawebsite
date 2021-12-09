@@ -11,10 +11,10 @@ const HomeSection2 = () => {
            <div className={style.contentBox}>
                <h2 className={style.title}>Ways to Get Involved</h2>
                <div className={style.buttonContainer}>
-                   <Link href="https://docs.google.com/forms/d/1yoGOHrJUBUwfuhIeJDm18CGscvCLmGPlN-yno1-tQ-I/viewform?fbclid=IwAR3H0zii6wp9ukTk1OIWkntS8IbBySy2Mab2J0qjphUfefSKqWdDate7uuM&edit_requested=true">
-                        <div className={`${style.buttonBox} ${style.buttonBox1}`}>
+                   <Link   href="https://docs.google.com/forms/d/1yoGOHrJUBUwfuhIeJDm18CGscvCLmGPlN-yno1-tQ-I/viewform?fbclid=IwAR3H0zii6wp9ukTk1OIWkntS8IbBySy2Mab2J0qjphUfefSKqWdDate7uuM&edit_requested=true">
+                        <a target="_blank" className={`${style.buttonBox} ${style.buttonBox1}`}>
                             <img src="/Images/JOIN.jpg" className={style.imageBox}/>
-                        </div>
+                        </a>
                     </Link >
 
                     <Link href="/info/program">

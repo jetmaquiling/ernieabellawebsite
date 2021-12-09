@@ -13,7 +13,9 @@ const HeadV1 = ({pos, open, setOpen}) => {
   
   return (
     <div  className={pos === "top" ? style.main : style.off} >
+
         <div className={pos === "top" ? style.navbar : style.navbarFixed}>
+
           <div className={pos === "top" ? style.navbar1 : style.navbar1Fixed} >
                 <Link href="/">
              
@@ -44,11 +46,11 @@ const HeadV1 = ({pos, open, setOpen}) => {
                 </div>
                 </Link>
 
-                <Link  href="https://docs.google.com/forms/d/1yoGOHrJUBUwfuhIeJDm18CGscvCLmGPlN-yno1-tQ-I/viewform?fbclid=IwAR3H0zii6wp9ukTk1OIWkntS8IbBySy2Mab2J0qjphUfefSKqWdDate7uuM&edit_requested=true">
+                <a target="_blank" rel="noreferrer" href="https://docs.google.com/forms/d/1yoGOHrJUBUwfuhIeJDm18CGscvCLmGPlN-yno1-tQ-I/viewform?fbclid=IwAR3H0zii6wp9ukTk1OIWkntS8IbBySy2Mab2J0qjphUfefSKqWdDate7uuM&edit_requested=true">
                 <div  className={style.buttonBox} >
                   <h4 className={style.buttonFont}>Get Involved</h4>
                 </div>
-                </Link>
+                </a>
 
             
 
@@ -61,6 +63,7 @@ const HeadV1 = ({pos, open, setOpen}) => {
           <div className={style.navbar4} onClick={()=>{setOpen(!open)}} >   
                 <MenuIcon style={{color: '#fff', fontSize: '40px', cursor: 'pointer'}} />
           </div>
+
           
           
         </div>

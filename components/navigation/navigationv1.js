@@ -15,7 +15,7 @@ const NavigationV1 = ({pos,open, setOpen, header}) => {
         {header && <div className={style.navbar}>
           <div className={style.navbar1}>
               <div className={style.tinylogoToken}>
-                <img src={'/Logo/logowhite.png'} alt="Logo"  className={style.logoToken}/>
+                <img src={'/Logo/logoWhite.png'} alt="Logo"  className={style.logoToken}/>
               </div>
           </div>
 
@@ -30,32 +30,22 @@ const NavigationV1 = ({pos,open, setOpen, header}) => {
 
               
               <div  className={style.buttonBox}>
-                <Link href="/join"><h4 className={style.h4animate}>Join The Advocacy</h4></Link>
+                <Link  href="https://docs.google.com/forms/d/1yoGOHrJUBUwfuhIeJDm18CGscvCLmGPlN-yno1-tQ-I/viewform?fbclid=IwAR3H0zii6wp9ukTk1OIWkntS8IbBySy2Mab2J0qjphUfefSKqWdDate7uuM&edit_requested=true" ><h4 className={style.h4animate}>Join The Advocacy</h4></Link>
               </div>
-
-              <div  className={style.buttonBox}>
-                <Link href="/join"><h4 className={style.h4animate}>Get Involved</h4></Link>
-              </div>
-
              
               <div  className={style.buttonBox}>
                 <Link href="/info/about"><h4 className={style.h4animate}>About Ernie</h4></Link>
               </div>
   
               <div  className={style.buttonBox}>
-                <Link href="/info/about"><h4 className={style.h4animate}>Priorities</h4></Link>
+                <Link href="/info/program"><h4 className={style.h4animate}>Priorities</h4></Link>
               </div>
 
               <div  className={style.buttonBox}>
-                <Link href="/info/about"><h4 className={style.h4animate}>News</h4></Link>
+                <Link href="/blog"><h4 className={style.h4animate}>News</h4></Link>
               </div>
               
              
-
-              <div  className={style.buttonBox}>
-                <Link href="/info/about"><h4 className={style.h4animate}>Articles</h4></Link>
-              </div>
-
               <div  className={style.specialbuttonBox}>
                 <Link href="/info/about"><h4 className={style.specialh4animate}>Donate</h4></Link>
               </div>
@@ -67,7 +57,7 @@ const NavigationV1 = ({pos,open, setOpen, header}) => {
 
         </div>
         <div className={style.rightsBox}>
-                    <p className={style.rightsText}>2021 © ErnieAbella.COM | All rights reserved</p>
+              <p className={style.rightsText}>2021 © ErnieAbella.COM | All rights reserved</p>
         </div>
 
         

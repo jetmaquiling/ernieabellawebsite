@@ -14,6 +14,7 @@ import FooterV2 from "@/components/footer/footerv2";
 import FooterV1 from './../../components/footer/footerv1';
 import NewSection3 from "@/components/newsection/newsection3";
 import NewSection4 from "@/components/newsection/newsection4";
+import HeadV2 from "@/components/head/headv2";
 
 
 const ArticleHub = () => {
@@ -23,7 +24,7 @@ const ArticleHub = () => {
 
   return (
         <div className={style.main}>
-            <HeadV3/>
+            <HeadV2 backdrop={true}/>
             <NewSection1/>
             <NewSection2/>
             <NewSection3/>
