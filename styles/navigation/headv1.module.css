@@ -291,7 +291,7 @@
     .navbar{
         width: 100%;
         padding: 5px;
-
+        align-items: flex-start;
     }
     .navbarFixed{
         width: 100%;
@@ -307,7 +307,9 @@
         justify-content: flex-end;
         display: flex;
     }
- 
+    .logo{
+        margin: 5px 0px 0px 5px;
+    }
 
     .logoTitle1 {
         font-weight: bold;

@@ -101,6 +101,7 @@ export default function BlogPage() {
                         <img src="/Logo/LogoDark.png" className={styles.logo} />
                     </div>
 
+                    <h6 className={styles.subject}>SHARE</h6>
                     <div className={styles.linkContainer}>
                         <a  target="_blank"  href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`}>
                         <div className={styles.linkBox}>

@@ -45,6 +45,7 @@
 }
 
 .text{
+    text-align: center;
     font-size: 15px;
     margin: 0px;
 }
@@ -76,8 +77,15 @@
 }
 
 .image{
-    width: 100%;
+    margin: auto;
+    width: 80%;
 }
+
+.imageBPBP{
+    margin: auto;
+    width: 80%;
+}
+
 
 .section3{
     padding: 30px; 
@@ -88,9 +96,10 @@
 .buttonFont{
     background-color: #ce1127;
     text-align: center;
-    margin: 0px;
+    margin: 10px auto ;
     padding: 10px 0px;
     font-size: 20px;
+    width: 80%;
 }
 
 

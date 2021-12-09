@@ -44,7 +44,9 @@ const FooterV1 = () => {
             </div>
 
             <div className={`${style.section} ${style.section3}`}>
-                <h3 className={style.label}>BAGONG BAYAN = BAGONG PILIPINAS</h3>
+                <h3 className={style.text}>Supported by: </h3>
+                <img src="/Logo/LogoBPBP.png" className={style.imageBPBP}/>
+                <p className={style.text}>a non-profit and non-government organization, <br/> duly registered at the SEC</p>
                 <h4  className={style.buttonFont}>DONATE</h4>
               
             </div>

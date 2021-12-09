@@ -43,13 +43,14 @@ export default function CarouselComponent ({openVideo,setOpenVideo}) {
                <div className={style.itemBox1}>
                     <div className={style.textBox}>
                         <h1 className={style.title}>
-                                GOBYERNONG NARARAMDAMAN
+                                GOBYERNONG <br/> NARARAMDAMAN
                         </h1>
-                   </div>
-                   <div className={style.buttoncontainer}>
+                        <div className={style.buttoncontainer}>
                         <h4 className={style.button} >LEARN MORE</h4>
                         <PlayCircleOutlineIcon onClick={()=>toggle("https://www.youtube.com/embed/V5Is1K5Bprs")} style={{fontSize: '45px'}} className={style.youtubeButton}/>
+                        </div>
                    </div>
+                   
                    
                </div>
             </div>
@@ -58,16 +59,17 @@ export default function CarouselComponent ({openVideo,setOpenVideo}) {
                 <div className={style.itemBox1}>
                     <div className={style.textBox}>
                         <h1 className={style.title}>
-                                PATAS NA LIPUNAN
+                                PATAS NA <br/> LIPUNAN
                         </h1>
                         {/* <p className={style.subText}>
                                 The PHILIPPINE CENTURY, Change can happen OVERNIGHT!
                         </p> */}
-                    </div>
-                    <div className={style.buttoncontainer}>
+                        <div className={style.buttoncontainer}>
                         <h4 className={style.button} >LEARN MORE</h4>
                         <PlayCircleOutlineIcon onClick={()=>toggle("https://www.youtube.com/embed/Hh5NoTvzDQY")} style={{fontSize: '45px'}} className={style.youtubeButton}/>
-                   </div>
+                        </div>
+                    </div>
+                    
                 
                 </div>
             </div>
@@ -76,13 +78,14 @@ export default function CarouselComponent ({openVideo,setOpenVideo}) {
                 <div className={style.itemBox1}>
                     <div className={style.textBox}>
                         <h1 className={style.title}>
-                           MATATAG NA BAYAN
+                           MATATAG NA <br/> BAYAN
                         </h1>
-                    </div>
-                    <div className={style.buttoncontainer}>
+                        <div className={style.buttoncontainer}>
                         <h4 className={style.button} >JOIN THE ADVOCACY</h4>
                         <PlayCircleOutlineIcon onClick={()=>toggle("https://www.youtube.com/embed/yVlRTRWKGkw")} style={{fontSize: '45px'}} className={style.youtubeButton}/>
                    </div>
+                    </div>
+                   
                 </div>
             </div>
 
