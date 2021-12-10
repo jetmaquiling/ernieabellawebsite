@@ -9,7 +9,7 @@
 }
 
 .itemContainer1{
-    background-image: url("/Slide 2.jpg");
+    background-image: url("/Slide 2.jpeg");
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -19,7 +19,7 @@
 }
 
 .itemContainer2{
-    background-image: url("/Slide 3.jpg");
+    background-image: url("/Slide 1.jpeg");
     background-repeat: no-repeat;
     background-position: center;
   
@@ -29,7 +29,7 @@
 }
 
 .itemContainer3{
-    background-image: url("/Slide 1.jpg");
+    background-image: url("/Slide 3.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
