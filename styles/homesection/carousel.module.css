@@ -11,7 +11,7 @@
 .itemContainer1{
     background-image: url("/Slide 2.jpeg");
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     background-size: cover;
   
     display: flex;

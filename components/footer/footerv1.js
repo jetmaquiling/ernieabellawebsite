@@ -46,9 +46,8 @@ const FooterV1 = () => {
             </div>
 
             <div className={`${style.section} ${style.section3}`}>
-                <h3 className={style.text}>Supported by: </h3>
                 <img src="/Logo/LogoBPBP.png" className={style.imageBPBP}/>
-                <p className={style.text}>a non-profit and non-government organization, <br/> duly registered at the SEC</p>
+                <p className={style.text}>Ernie Abella Advocacy and Candidacy is supported by Bagong Pilipino = Bagong Pilipinas, a non-profit and non-government organization, duly registered at the Securities and Exchange Commission.</p>
                 <h4  className={style.buttonFont}>DONATE</h4>
               
             </div>

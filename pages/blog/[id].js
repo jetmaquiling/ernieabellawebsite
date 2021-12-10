@@ -34,11 +34,11 @@ export default function BlogPage() {
     const [blog , setBlog] = React.useState({});
     const [link, setLink] = React.useState(false);
     const [feature, setFeature] = React.useState([])
-
-
+    const ShareTitle = blog ? blog.main_title : "Ernie Abella - Patas Na Lipunan"
+    
     const share = async () =>{
         try {
-            await navigator.share({ title: "Ernie Abella - Patas Na Lipunan", url: window.location.href });
+            await navigator.share({ title: ShareTitle, url: window.location.href });
             console.log("Data was shared successfully");
           } catch (err) {
             console.error("Share failed:", err.message);
