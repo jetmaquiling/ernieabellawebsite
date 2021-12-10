@@ -10,7 +10,7 @@ import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import PlayCircleOutlineIcon from '@material-ui/icons/PlayCircleOutline';
 
 export default function CarouselComponent ({openVideo,setOpenVideo}) {
-
+    const [state , setState] = React.useState(0)
 
     const toggle = (url) =>{
         setOpenVideo({url: url, open:true})
@@ -19,12 +19,14 @@ export default function CarouselComponent ({openVideo,setOpenVideo}) {
   return (
       <div className={style.main}>
         <Carousel
+            slideIndex={state}
+            afterSlide={slideIndex => setState(slideIndex)}
             width="100%"
             height="100%"
             transitionMode='scroll'
             autoplay={true}
             autoplayInterval={6000}
-            wrapAround={true}
+         
             renderCenterLeftControls={({ previousSlide }) => (
                 <div className={style.carouselButton}>
                     <ArrowBackIosIcon style={{fontSize: '70px'}}  onClick={previousSlide} />
@@ -33,7 +35,14 @@ export default function CarouselComponent ({openVideo,setOpenVideo}) {
 
             renderCenterRightControls={({ nextSlide }) => (
                 <div className={style.carouselButton} >
-                    <ArrowForwardIosIcon style={{fontSize: '70px'}} onClick={nextSlide}/>
+                    <ArrowForwardIosIcon style={{fontSize: '70px'}} onClick={()=>{
+                        if(state == 2){
+                            setState(0)
+                        }else{
+                            nextSlide()
+                        }
+                        
+                    }}/>
                 </div>
                 
             )}

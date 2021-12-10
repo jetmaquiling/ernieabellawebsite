@@ -14,11 +14,13 @@ const FooterV1 = () => {
   return (
         <div className={style.main}>
             <div className={`${style.section} ${style.section1}`}>
+                
                 <h3 className={style.label}>Contact Us</h3>
                 <p  className={style.text}>+63 2 8565 1086</p>
                 <p className={style.text}>402 4th Flr, Galleria Corporate Center, EDSA Corner, Ortigas Ave, Quezon City, 1110 Metro Manila
                 </p>
                 <p className={style.text}>bagongbayan@gmail.com</p>
+                
                 <div className={style.socialMediaContainer}>
                     <div className={style.socialBox}>
                         <FacebookIcon style={{color: "#fff", fontSize: '30px'}}/>

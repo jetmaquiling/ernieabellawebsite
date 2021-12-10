@@ -17,15 +17,17 @@
     display: flex;
     height: 100vh;
 }
+
 .itemContainer2{
     background-image: url("/Slide 3.jpg");
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
   
     background-size: cover;
     display: flex;
     height: 100vh;
 }
+
 .itemContainer3{
     background-image: url("/Slide 1.jpg");
     background-repeat: no-repeat;
