@@ -22,6 +22,7 @@ import HeadV2 from '@/components/head/headv2';
 import FooterV2 from '@/components/footer/footerv2';
 import FooterV1 from './../../components/footer/footerv1';
 import qs from 'qs'
+import ReplyIcon from '@material-ui/icons/Reply';
 
 const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
 
@@ -34,6 +35,15 @@ export default function BlogPage() {
     const [link, setLink] = React.useState(false);
     const [feature, setFeature] = React.useState([])
 
+
+    const share = async () =>{
+        try {
+            await navigator.share({ title: "Ernie Abella - Patas Na Lipunan", url: window.location.href });
+            console.log("Data was shared successfully");
+          } catch (err) {
+            console.error("Share failed:", err.message);
+          }
+    }
   
     useEffect(() => {
         scrollToRef(myRef)
@@ -101,11 +111,17 @@ export default function BlogPage() {
                         <img src="/Logo/LogoDark.png" className={styles.logo} />
                     </div>
 
-                    <h6 className={styles.subject}>SHARE</h6>
+                
                     <div className={styles.linkContainer}>
+                        
+                        <div className={styles.linkBox} onClick={share}>
+                            <ReplyIcon style={{color:'#fff'}}/>    
+                        </div>
+                  
+
                         <a  target="_blank"  href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`}>
                         <div className={styles.linkBox}>
-                            <FacebookIcon style={{color:'#fff'}}/>        
+                            <FacebookIcon style={{color:'#fff'}}/>    
                         </div>
                         </a> 
 

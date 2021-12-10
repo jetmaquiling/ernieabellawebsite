@@ -10,7 +10,7 @@ const NewSection2 = () => {
         <div className={style.main}>
             <h2  className={style.label} >👇 Top Stories 👇</h2>
             <div className={style.articleContainer}>
-                {[1,2,3,4,5,6,7,8].map((data)=>{
+                {[1,2,3,4,5,6].map((data)=>{
                     return (
                         <div key={data} className={style.articleItem}>
                             <img className={style.articleImage} src="/Thumbnail/ernieabella.png"/>
