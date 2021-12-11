@@ -23,7 +23,7 @@ const FooterV1 = () => {
                 
                 <div className={style.socialMediaContainer}>
                     <div className={style.socialBox}>
-                        <FacebookIcon style={{color: "#fff", fontSize: '30px'}}/>
+                        <Link href="https://www.facebook.com/ernieabellaPH"><FacebookIcon style={{color: "#fff", fontSize: '30px'}}/></Link>
                     </div>
 
                     <div className={style.socialBox}>

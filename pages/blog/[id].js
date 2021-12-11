@@ -104,7 +104,7 @@ export default function BlogPage({article}) {
                             <meta property="og:type" content="website" />
                             <title>{article.main_title}</title>
                             <meta property="og:title" content={article.main_title} />
-                            <meta property="og:image" content={article.thumbnail_image ? article.thumbnail_image.formats.thumbnail.url : "/Thumbnail/ernieabella.png"} />
+                            <meta property="og:image" content={article.thumbnail_image ? article.thumbnail_image.url : "/Thumbnail/ernieabella.png"} />
                             <meta property="og:description" content={article.sub_title} />
                         </Head>
                     }
@@ -191,7 +191,7 @@ export default function BlogPage({article}) {
                             <meta property="og:type" content="website" />
                             <title>{article.main_title}</title>
                             <meta property="og:title" content={article.main_title} />
-                            <meta property="og:image" content={article.thumbnail_image ? article.thumbnail_image.formats.thumbnail.url : "/Thumbnail/ernieabella.png"} />
+                            <meta property="og:image" content={article.thumbnail_image ? article.thumbnail_image.url : "/Thumbnail/ernieabella.png"} />
                             <meta property="og:description" content={article.sub_title} />
                         </Head>
                     }
