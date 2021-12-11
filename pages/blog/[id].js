@@ -26,7 +26,7 @@ import ReplyIcon from '@material-ui/icons/Reply';
 
 const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
 
-export default function BlogPage() {
+export default function BlogPage({article}) {
     const myRef = React.useRef(null);
     const router = useRouter();
     const id = router.query.id
@@ -99,10 +99,15 @@ export default function BlogPage() {
 
             <div className={styles.root} ref={myRef} >
 
-                <Head>  
-                    <title>{blog.main_title}</title>
-                    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-                </Head>
+                    {article && 
+                        <Head>
+                            <meta property="og:type" content="website" />
+                            <title>{article.main_title}</title>
+                            <meta property="og:title" content={article.main_title} />
+                            <meta property="og:image" content={article.thumbnail_image ? article.thumbnail_image.url : "/Thumbnail/ernieabella.png"} />
+                            <meta property="og:description" content={article.sub_title} />
+                        </Head>
+                    }
                 <HeadV2 backdrop={true}/>
 
                 <div  className={styles.mainContainer}>
@@ -181,6 +186,15 @@ export default function BlogPage() {
     }else{
         return(
             <div className={styles.root} ref={myRef}>
+                {article && 
+                        <Head>
+                            <meta property="og:type" content="website" />
+                            <title>{article.main_title}</title>
+                            <meta property="og:title" content={article.main_title} />
+                            <meta property="og:image" content={article.thumbnail_image ? article.thumbnail_image.url : "/Thumbnail/ernieabella.png"} />
+                            <meta property="og:description" content={article.sub_title} />
+                        </Head>
+                    }
                 <div  className={styles.main}>
                     
                       
@@ -227,3 +241,21 @@ export default function BlogPage() {
     
 }
   
+
+
+export async function getServerSideProps(context) {
+    const  { id } = context.params;
+    let article = null;
+    await fetch(`${config.SERVER_URL}/article-ernie-abellas/${id}`)
+      .then((response) => response.json())
+      .then((json) =>{
+        article=json
+      })
+  
+    return {
+      props: {
+        article,
+      },
+    };
+  };
+

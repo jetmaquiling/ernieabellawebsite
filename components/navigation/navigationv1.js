@@ -15,7 +15,7 @@ const NavigationV1 = ({pos,open, setOpen, header}) => {
         {header && <div className={style.navbar}>
           <div className={style.navbar1}>
               <div className={style.tinylogoToken}>
-                <img src={'/Logo/logoWhite.png'} alt="Logo"  className={style.logoToken}/>
+                <img  src="/Logo/LogoWhite.png" className={style.logoToken} alt="logo" onMouseLeave={(e) => {e.target.src = "/Logo/LogoWhite.png"}}  onMouseOver={(e) => {e.target.src = "/Logo/LogoDark.png"}} />
               </div>
           </div>
 
@@ -47,7 +47,7 @@ const NavigationV1 = ({pos,open, setOpen, header}) => {
               
              
               <div  className={style.specialbuttonBox}>
-                <Link href="/info/about"><h4 className={style.specialh4animate}>Donate</h4></Link>
+                <Link href="/info/donate"><h4 className={style.specialh4animate}>Donate</h4></Link>
               </div>
 
             
@@ -57,7 +57,7 @@ const NavigationV1 = ({pos,open, setOpen, header}) => {
 
         </div>
         <div className={style.rightsBox}>
-              <p className={style.rightsText}>2021 © ErnieAbella.COM | All rights reserved</p>
+              <p className={style.rightsText}>2021 © ERNIE ABELLA | All rights reserved</p>
         </div>
 
         

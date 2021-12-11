@@ -136,7 +136,7 @@
     }
 
     .section1{
-        padding: 0px;
+        width: 80%;
     }
     
 
@@ -153,16 +153,9 @@
     
     .section{
         width: 100%;
-        padding: 30px;
+        padding: 15px;
     }
     
-    .section1{
-        width: 80%;
-    }
-
-    .section3{
-        width: 90%;
-    }
 
     .socialBox{
         padding: 10px;

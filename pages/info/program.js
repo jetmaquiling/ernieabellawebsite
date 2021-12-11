@@ -9,7 +9,7 @@ import styles from '../home.module.css'
 export default function Program() {
   return (
     <div className={styles.main}>
-      <HeadV2/>
+      <HeadV2 backdrop={true}/>
         <ProgramSection1/>
           
         <FooterV1/>

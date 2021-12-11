@@ -80,7 +80,7 @@ const Floater = ({backdrop=false}) => {
                     <YouTubeIcon style={{color: "#c4302b", fontSize: '20px'}}/>
                 </div>
             </div>
-            <h3 className={style.donateButton}>DONATE</h3>
+            <Link href="/info/donate"><h3 className={style.donateButton}>DONATE</h3></Link>
         </div>
         :
         <div className={style.off} >

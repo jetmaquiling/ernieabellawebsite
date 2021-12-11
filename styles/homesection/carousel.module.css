@@ -1,5 +1,6 @@
 .main{
     padding-top: 0px;
+    min-height: 100vh;
 }
 
 
@@ -49,7 +50,7 @@
 }
 
 .textBox{
-    background-color: rgba(0, 0, 0, 0.400);
+    background-color: rgba(0, 6, 95, 0.308);
     padding: 5px 20px;
     text-align: center;
 }
@@ -60,6 +61,7 @@
     color: #fff;
     text-align: left;
     line-height: 120px;
+    font-weight: 300;
 }
 
 .subText{

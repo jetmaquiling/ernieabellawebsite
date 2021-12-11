@@ -1,11 +1,11 @@
 .main{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
-    padding: 200px 100px 100px 100px;
+    align-items: center;
+    flex-direction: column;
     background-size: cover;
-    background-color: #0C2763;
     background-position: right bottom, left top;
     background-repeat: no-repeat, repeat;
     background-attachment: fixed;
@@ -27,26 +27,79 @@
 }
 
 .image{
-    width: 100%;
-    padding: 30px;
+    width: 50%;
+    margin: 50px;
 }
 
 .contentBox{
-    width: 65%;
+    width: 30%;
+    margin: auto;
     padding: 18px;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+
 }
 
-.title{
-    color: #fff;
+.title1{
     margin: 0px;
-    font-size: 40px;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.title2{
+    margin: 0px;
+    font-size: 90px;
+    line-height: 70px;
     font-weight: 400;
 }
 
-.underline{
-    width: 60px;
-    background-color: red;
+
+
+.platformContainer{
+    width: 70%;
+    margin: 30px 0px;
+}
+
+.titleContainer{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.titleBox{
+   
+}
+.number{
+    font-size: 80px;
+    color: rgb(70, 70, 70);
+    margin: 0px;
+}
+
+.title{
+    color: #0038A8;
+    margin: 0px;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.subTitle{
+    margin: 0px;
+    line-height: 20px;
+    font-size: 20px;
+    color: rgb(136, 136, 136);
+}
+
+
+
+
+.underline2{
+    width: 100px;
+    background-color: #BF0D3E;
     height: 5px;
+    margin-top: 3px;
     border-radius: 40px;
 }
 
@@ -56,58 +109,70 @@
     color: #fff;
 }
 
+.textContainer{
+    display: flex;
+    align-items: center;
+    width: 95%;
+    align-self: center;
+    margin: 30px 0px;
+}
+
+.textItem{
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 600;
+    color: rgb(77, 77, 77);
+    margin: 0px 0px 0px 10px;
+    overflow-wrap: break-word;
+}
+
 
 
 
 @media only screen and (max-width: 1000px) {
     .main{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        padding: 200px 100px 100px 100px;
-        background-image: none;
+        background: none;
     }
-
-    .container{
-        flex-direction: column;
+    .platformContainer{
+        width: 90%;
     }
-
-    .image{
-        width: 300px;
-        padding: 30px;
-    }
-
-    .imageBox{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .contentBox{
-        width: 100%;
-    }
-
 }
 
 
-@media only screen and (max-width: 600px) {
-    .main{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        padding: 100px 10px 100px 10px;
-        background-image: none;
-    }
-    .imageBox{
-        
-    }
-
+@media only screen and (max-width: 700px) {
     .image{
-        width: 250px;
-        padding: 30px;
+        width: 80%;
+        margin: 30px 0px 0px 0px;
     }
 
+    .platformContainer{
+        width: 95%;
+    }
+
+    .number{
+        font-size: 35px;
+    }
+    
+    .title{
+        font-size: 20px;
+        line-height: 20px;
+    }
+    
+    .subTitle{
+        line-height: 15px;
+        font-size: 12px;
+    }
+
+    .textContainer{
+        margin: 20px 0px;
+    }
+
+    .textItem{
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 600;
+    }
+    
+    
 
 }
