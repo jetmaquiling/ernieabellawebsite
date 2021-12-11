@@ -65,7 +65,7 @@ const Floater = ({backdrop=false}) => {
             <h3 className={!backdrop ? style.text1 : style.offText}>BAGONG PILIPINAS</h3> */}
             <div className={style.socialMediaContainer}>
                 <div className={style.socialBox}>
-                    <FacebookIcon style={{color: "#3b5998 ", fontSize: '20px'}}/>
+                    <Link href="https://www.facebook.com/ernieabellaPH"><FacebookIcon style={{color: "#3b5998 ", fontSize: '20px'}}/></Link>
                 </div>
 
                 <div className={style.socialBox}>
