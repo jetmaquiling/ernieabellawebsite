@@ -22,18 +22,21 @@ const FooterV1 = () => {
                 <p className={style.text}>bagongbayan@gmail.com</p>
                 
                 <div className={style.socialMediaContainer}>
+                    <Link href="https://www.facebook.com/ernieabellaPH">
                     <div className={style.socialBox}>
-                        <Link href="https://www.facebook.com/ernieabellaPH"><FacebookIcon style={{color: "#fff", fontSize: '30px'}}/></Link>
+                      <FacebookIcon style={{color: "#fff", fontSize: '30px'}}/>
                     </div>
-
+                    </Link>
+                    <Link href="https://instagram.com/ernie.abella">
                     <div className={style.socialBox}>
                         <InstagramIcon style={{color: "#fff", fontSize: '30px'}}/>
                     </div>
-
+                    </Link>
+                    <Link href="https://twitter.com/ernieabella"> 
                     <div className={style.socialBox}>
-                        <TwitterIcon style={{color: "#fff", fontSize: '30px'}}/>
+                       <TwitterIcon style={{color: "#fff", fontSize: '30px'}}/>
                     </div>
-
+                    </Link>
                     <div className={style.socialBox}>
                         <YouTubeIcon style={{color: "#fff", fontSize: '30px'}}/>
                     </div>

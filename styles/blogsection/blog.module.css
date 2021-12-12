@@ -103,9 +103,16 @@
 }
 
 .content p {
+    font-size: 20px;
+    line-height: 35px;
+    margin: 10px 0px;
+}
+
+.content li{
     font-size: 18px;
+    line-height: 25px;
     font-weight: 400;
-    margin: 0px;
+    margin: 10px 0px;
 }
 
 
@@ -119,6 +126,7 @@
     content: ""; /* clears default height */
     margin-top: 50px; /* change this to whatever height you want it */
 }
+
 
 
 .sectionB{
@@ -187,6 +195,8 @@
     margin: 10px;
     justify-content: center;
 }
+
+
 
 
 
@@ -302,7 +312,7 @@
     
     .subtitle{
         margin: 10px 10px;
-        font-size: 18px;
+        font-size: 15px;
         font-weight: 400;
         color: rgba(0, 0, 0, 0.795);
     }
@@ -321,20 +331,24 @@
 
     .content{
         text-align: start;
-        padding: 0px 15px;
+        margin: auto;
+        width: 85%;
     }
 
     .content p {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 400;
+        line-height: 25px;
     }
     .content h2 {
         font-size: 20px;
+        line-height: 20px;
        
     }
+
     
     .content br {
-        margin-top: 50px; /* change this to whatever height you want it */
+        margin: 25px 0px; /* change this to whatever height you want it */
     }
 
     .content iframe{
@@ -348,7 +362,21 @@
         text-align: center;
         line-height: 25px;
     }
-  
+    
+    
+    .content ul{
+        padding: 0px 0px 0px 20px;
+    }
+
+    .content ol{
+        padding: 0px 0px 0px 20px;
+    }
+
+    .content li{
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 20px;
+    }
     
 
 }

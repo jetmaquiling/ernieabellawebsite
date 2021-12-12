@@ -69,11 +69,11 @@ const Floater = ({backdrop=false}) => {
                 </div>
 
                 <div className={style.socialBox}>
-                    <InstagramIcon style={{color: "#3f729b", fontSize: '20px'}}/>
+                <Link href="https://instagram.com/ernie.abella"><InstagramIcon style={{color: "#3f729b", fontSize: '20px'}}/></Link>
                 </div>
 
                 <div className={style.socialBox}>
-                    <TwitterIcon style={{color: "#00acee ", fontSize: '20px'}}/>
+                <Link href="https://twitter.com/ernieabella"><TwitterIcon style={{color: "#00acee ", fontSize: '20px'}}/></Link>
                 </div>
 
                 <div className={style.socialBox}>
@@ -84,7 +84,7 @@ const Floater = ({backdrop=false}) => {
         </div>
         :
         <div className={style.off} >
-            <h6 className={style.cookieText}>ernieabella.com uses cookies to give you a better navigation experience on our site. As soon as you continue the tour, we assume you accept the cookies policy. Learn more about the cookie policy we use here.</h6>
+            <h6 className={style.cookieText}>ernieabella.com uses cookies to give you a better navigation experience on our site. As soon as you continue the tour, we assume you accept the cookies policy. Learn more about the cookie policy we use <Link href="/info/privacypolicy">here "Privacy Policy"</Link>.</h6>
             <h6 className={style.cookieButton} onClick={acceptCookie}>
                 I ACCEPT
             </h6>

@@ -6,9 +6,9 @@ import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 
 
 const data = [
-  {number: "#1" , title: 'PATAS NA LIPUNAN' , subtitle: '(Equal & Just Society)', items: ["Lahat may boses, Lahat pinapakinggan at pwedeng lumahok sa pamamahala.", "Pantay ang opportunidad ng pag-unlad."] },
-  {number: "#2" , title: 'GOBYERNONG NARARAMDAMAN' , subtitle: '(Trustworthy Government)', items: ["Economiyang sapat sa lahat: Trabaho / Enerhiya/ Tubig / Pagkain / Kalusugan.", "Opportunidad para sa lahat: MSMEs, OFW Re-integration, disabled & differently abled.", "Batas & Kaayusan", "Proteksyon para sa yamang bayan."] },
-  {number: "#3" , title: 'MATATAG NA BAYAN' , subtitle: '(Resilient & Innovative Society)', items: ["Kalahok ang bayan laban sa korapsyon, krimen, droga at depensa laban sa terorista at mananakop.", "Panghabangbuhay na edukasyon at training; serbisyong pangkalusugan; suporta sa sakuna; at tulong laban sa pinsala."] }
+  {number: "#1" , title: 'PATAS NA LIPUNAN' , subtitle: '(Equal & Just Society)', items: ["Lahat may boses, Lahat pinapakinggan at pwedeng lumahok sa pamamahala.", "Pantay ang oportunidad ng pag-unlad."] },
+  {number: "#2" , title: 'GOBYERNONG NARARAMDAMAN' , subtitle: '(Trustworthy Government)', items: ["Ekonomiyang sapat sa lahat: Trabaho / Enerhiya/ Tubig / Pagkain / Kalusugan.", "Oportunidad para sa lahat: MSMEs, OFW Re-integration, disabled & differently abled.", "Batas at Kaayusan", "Proteksyon para sa yamang bayan."] },
+  {number: "#3" , title: 'MATATAG NA BAYAN' , subtitle: '(Resilient & Innovative Society)', items: ["Kalahok ang bayan laban sa korapsyon, krimen, droga at depensa laban sa terorista at mananakop.", "Panghabangbuhay na edukasyon at pagsasanay; serbisyong pangkalusugan; suporta sa sakuna; at tulong laban sa pinsala."] }
 ]
 
 const ProgramSection1 = () => {

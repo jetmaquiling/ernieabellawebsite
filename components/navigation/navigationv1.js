@@ -29,20 +29,26 @@ const NavigationV1 = ({pos,open, setOpen, header}) => {
         <div className={style.navbar2}>
 
               
-              <div  className={style.buttonBox}>
-                <Link  href="https://docs.google.com/forms/d/1yoGOHrJUBUwfuhIeJDm18CGscvCLmGPlN-yno1-tQ-I/viewform?fbclid=IwAR3H0zii6wp9ukTk1OIWkntS8IbBySy2Mab2J0qjphUfefSKqWdDate7uuM&edit_requested=true" ><h4 className={style.h4animate}>Join The Advocacy</h4></Link>
-              </div>
+              
              
               <div  className={style.buttonBox}>
                 <Link href="/info/about"><h4 className={style.h4animate}>About Ernie</h4></Link>
               </div>
   
               <div  className={style.buttonBox}>
-                <Link href="/info/program"><h4 className={style.h4animate}>Priorities</h4></Link>
+                <Link href="/info/program"><h4 className={style.h4animate}>Platform</h4></Link>
               </div>
 
               <div  className={style.buttonBox}>
                 <Link href="/blog"><h4 className={style.h4animate}>News</h4></Link>
+              </div>
+
+              <div  className={style.buttonBox}>
+                <Link  href="https://docs.google.com/forms/d/1yoGOHrJUBUwfuhIeJDm18CGscvCLmGPlN-yno1-tQ-I/viewform?fbclid=IwAR3H0zii6wp9ukTk1OIWkntS8IbBySy2Mab2J0qjphUfefSKqWdDate7uuM&edit_requested=true" ><h4 className={style.h4animate}>Get Involved</h4></Link>
+              </div>
+
+              <div  className={style.buttonBox}>
+                <Link href="/info/resources"><h4 className={style.h4animate}>Resources</h4></Link>
               </div>
               
              
@@ -57,7 +63,8 @@ const NavigationV1 = ({pos,open, setOpen, header}) => {
 
         </div>
         <div className={style.rightsBox}>
-              <p className={style.rightsText}>2021 © ERNIE ABELLA | All rights reserved</p>
+              <p className={style.rightsText}>2021 © ERNIE ABELLA | All rights reserved <br/> <Link href="/info/privacypolicy">Term and Agreement | Privacy Policy</Link></p>
+
         </div>
 
         
