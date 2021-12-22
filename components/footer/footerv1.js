@@ -19,7 +19,7 @@ const FooterV1 = () => {
                 <p  className={style.text}>+63 2 8565 1086</p>
                 <p className={style.text}>402 4th Flr, Galleria Corporate Center, EDSA Corner, Ortigas Ave, Quezon City, 1110 Metro Manila
                 </p>
-                <p className={style.text}>bagongbayan@gmail.com</p>
+                <p className={style.text}>secretariat@bagongpilipino.org</p>
                 
                 <div className={style.socialMediaContainer}>
                     <Link href="https://www.facebook.com/ernieabellaPH">
