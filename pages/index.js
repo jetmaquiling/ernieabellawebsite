@@ -19,10 +19,10 @@ export default function Home() {
   return (
     <div className={styles.main}>
        <Head>
-          <title>ERNIE ABELLA - PARA SA PAGKA-PANGULO NG PILIPINAS</title>
+          <title>ERNIE ABELLA - BAGONG PILIPINAS</title>
           <meta name="description" content="PAG NABAGO ANG LOOB NG BAWAT PILIPINO MABABAGO ANG BAYAN NG PILIPINAS"/>
           <meta property="og:type"               content="website" />
-          <meta property="og:title"              content="ERNIE ABELLA - PARA SA PAGKA-PANGULO NG PILIPINAS" />
+          <meta property="og:title"              content="ERNIE ABELLA - BAGONG PILIPINAS" />
           <meta property="og:image"              content='./Thumbnail/ernieabella.png' />
         </Head>
       
