@@ -26,7 +26,7 @@ export default function CarouselComponent ({openVideo,setOpenVideo}) {
             transitionMode='scroll'
             autoplay={true}
             autoplayInterval={4000}
-         
+            wrapAround="true"
             renderCenterLeftControls={({ previousSlide }) => (
                 <div className={style.carouselButton}>
                     <ArrowBackIosIcon style={{fontSize: '70px'}}  onClick={previousSlide} />
