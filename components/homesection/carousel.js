@@ -12,6 +12,12 @@ import PlayCircleOutlineIcon from '@material-ui/icons/PlayCircleOutline';
 export default function CarouselComponent ({openVideo,setOpenVideo}) {
     const [state , setState] = React.useState(0)
 
+    React.useEffect(() => {
+        if(state === 3){
+            setState(0)
+        }
+    }, [state])
+
     const toggle = (url) =>{
         setOpenVideo({url: url, open:true})
     }
@@ -24,9 +30,13 @@ export default function CarouselComponent ({openVideo,setOpenVideo}) {
             width="100%"
             height="100%"
             transitionMode='scroll'
+            onDragStart={(slideIndex)=>{
+                if(state == 2){
+                    setState(0)
+                }
+            }}
             autoplay={true}
             autoplayInterval={4000}
-            wrapAround="true"
             renderCenterLeftControls={({ previousSlide }) => (
                 <div className={style.carouselButton}>
                     <ArrowBackIosIcon style={{fontSize: '70px'}}  onClick={previousSlide} />

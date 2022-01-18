@@ -9,7 +9,7 @@ const FooterV2 = () => {
   
   return (
         <div className={style.foooterv2}>
-            <p  className={style.copywrite}>2021 Copyright © ERNESTO ABELLA . All Rights Reserved.</p>
+            <p  className={style.copywrite}>2022 Copyright © ERNESTO ABELLA . All Rights Reserved.</p>
         </div>
   )
   
