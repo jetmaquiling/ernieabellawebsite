@@ -209,3 +209,21 @@ export default function BlogPage({article}) {
     
 }
 
+
+
+export async function getServerSideProps(context) {
+    let article = null;
+    await fetch(`${config.SERVER_URL}/article-ernie-abellas/13}`)
+      .then((response) => response.json())
+      .then((json) =>{
+        article=json
+      })
+  
+    return {
+      props: {
+        article,
+      },
+    };
+  };
+
+
