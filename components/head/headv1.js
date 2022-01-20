@@ -58,6 +58,12 @@ const HeadV1 = ({pos, open, setOpen}) => {
                 </div>
                 </Link>
 
+                <Link href="/info/socmed">
+                <div  className={style.buttonBox}  >
+                  <h4 className={style.buttonFont}>SocMed</h4>
+                </div>
+                </Link>
+
              
                 
                 

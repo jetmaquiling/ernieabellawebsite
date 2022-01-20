@@ -9,7 +9,7 @@ import axios from 'axios';
 import Skeleton from '@material-ui/lab/Skeleton';
 
 const NewSection3 = () => {
- 
+    const [load, setLoad] = React.useState(true)
     const [feature, setFeature] = React.useState([])
 
     React.useEffect(() => {
@@ -31,29 +31,51 @@ const NewSection3 = () => {
 
     }, [])
   
-  
-  return (
-        <div className={style.main}>
-            <h2  className={style.label} >Campaign Updates</h2>
-            <div className={style.articleContainer}>
-                {feature.map((data)=>{
-                    return (
-                        <>
-                            <Link href={`/blog/${data.id}`} >
-                                <div key={data} className={style.articleItem}>
-                                    <img className={style.articleImage} src={data.thumbnail_image.url}/>
-                                    <h4 className={style.articleTitle}>{data.main_title}</h4>
-                                    <p className={style.articleSubTitle}>{data.sub_title}</p>
-                                </div>
-                            </Link>
-                        </>
-                        
-                    )
-                })}
-            
+    if(!load){
+        return (
+            <div className={style.main}>
+                <h2  className={style.label} >Campaign Updates</h2>
+                <div className={style.articleContainer}>
+                    {feature.map((data)=>{
+                        return (
+                            <>
+                                <Link href={`/blog/${data.id}`} >
+                                    <div key={data} className={style.articleItem}>
+                                        <img className={style.articleImage} src={data.thumbnail_image.url}/>
+                                        <h4 className={style.articleTitle}>{data.main_title}</h4>
+                                        <p className={style.articleSubTitle}>{data.sub_title}</p>
+                                    </div>
+                                </Link>
+                            </>
+                            
+                        )
+                    })}
+                
+                </div>
             </div>
-        </div>
-  )
+        )
+    }else{
+        return (
+            <div className={style.main}>
+                <h2  className={style.label} >👇 Top Stories 👇</h2>
+                <div className={style.articleContainer}>
+                    {[1,2,3,4].map((data)=>{
+                        return (
+                            <div key={data} className={style.articleItem}>
+                                <Skeleton  className={style.skeleton} animation="wave" height={400} />
+                                <Skeleton className={style.skeleton} animation="wave" height={10} />
+                                <Skeleton className={style.skeleton} animation="wave" height={10} />
+                                <Skeleton className={style.skeleton} animation="wave" height={10} />
+                            </div>  
+                        )
+                    })}
+                
+                </div>
+            </div>
+        )
+    }
+  
+   
   
 }
 

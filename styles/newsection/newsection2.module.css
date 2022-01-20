@@ -4,6 +4,10 @@
 
 }
 
+.skeleton{
+    margin: 5px 0px;
+}
+
 .label{
     font-size: 25px;
     text-align: center;
@@ -55,15 +59,21 @@
 
 
 @media only screen and (max-width: 800px){
+    .articleSubject{
+        color: rgb(99, 99, 99);
+        font-size: 15px;
+        margin: 10px 0px;
+    }
     .articleItem{
         width: 50%;
-        padding: 10spx;
+        padding: 10px 5px;
         cursor: pointer
     }
 
     .articleTitle{
+        font-size: 13px;
         font-weight: 600;
-        line-height: 15px;
+        line-height: 17px;
     }
 
     
@@ -71,4 +81,11 @@
         font-size: 18px;
         text-align: center;
     }
+
+    .articleImageBox{
+        width: 100%;
+        height: 120px;
+        overflow: hidden;
+    }
+    
 }

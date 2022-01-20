@@ -51,6 +51,9 @@ const NavigationV1 = ({pos,open, setOpen, header}) => {
                 <Link href="/info/resources"><h4 className={style.h4animate}>Printables</h4></Link>
               </div>
               
+              <div  className={style.buttonBox}>
+                <Link href="/info/socmed"><h4 className={style.h4animate}>SocMed</h4></Link>
+              </div>
              
               <div  className={style.specialbuttonBox}>
                 <Link href="/info/donate"><h4 className={style.specialh4animate}>Donate</h4></Link>

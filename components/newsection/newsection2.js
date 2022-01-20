@@ -11,6 +11,8 @@ import Skeleton from '@material-ui/lab/Skeleton';
 
 const NewSection2 = () => {
     const [feature, setFeature] = React.useState([])
+    const [load, setLoad] = React.useState(true)
+
 
     React.useEffect(() => {
         async function getBlog() { 
@@ -32,31 +34,54 @@ const NewSection2 = () => {
     }, [])
   
 
-  return (
-        <div className={style.main}>
-            <h2  className={style.label} >👇 Top Stories 👇</h2>
-            <div className={style.articleContainer}>
-                {feature.map((data)=>{
-                    return (
-                        <>
-                            <Link href={`/blog/${data.id}`} >
-                                <div key={data} className={style.articleItem}>
-                                    <div className={style.articleImageBox}>
-                                        <img className={style.articleImage} src={data.thumbnail_image.url} />
+    if(!load){
+        return (
+            <div className={style.main}>
+                <h2  className={style.label} >👇 Top Stories 👇</h2>
+                <div className={style.articleContainer}>
+                    {feature.map((data)=>{
+                        return (
+                            <>
+                                <Link href={`/blog/${data.id}`} >
+                                    <div key={data} className={style.articleItem}>
+                                        <div className={style.articleImageBox}>
+                                            <img className={style.articleImage} src={data.thumbnail_image.url} />
+                                        </div>
+                                        <h6 className={style.articleSubject}>{data.subject}</h6>
+                                        <h4 className={style.articleTitle}>{data.main_title}<span className={style.author}>- By {data.author}</span></h4>
                                     </div>
-                                    <h6 className={style.articleSubject}>{data.subject}</h6>
-                                    <h4 className={style.articleTitle}>{data.main_title}<span className={style.author}>- By {data.author}</span></h4>
-                                </div>
-                            </Link>
-                        </>
-                        
-                        
-                    )
-                })}
-            
+                                </Link>
+                            </>
+                            
+                            
+                        )
+                    })}
+                
+                </div>
             </div>
-        </div>
-  )
+        )
+
+    }else{
+        return (
+            <div className={style.main}>
+                <h2  className={style.label} >👇 Top Stories 👇</h2>
+                <div className={style.articleContainer}>
+                    {[1,2,3,4,5,6].map((data)=>{
+                        return (
+                            <div key={data} className={style.articleItem}>
+                                <Skeleton  className={style.skeleton} animation="wave" height={400} />
+                                <Skeleton className={style.skeleton} animation="wave" height={10} />
+                                <Skeleton className={style.skeleton} animation="wave" height={10} />
+                                <Skeleton className={style.skeleton} animation="wave" height={10} />
+                            </div>  
+                        )
+                    })}
+                
+                </div>
+            </div>
+        )
+    }
+        
   
 }
 
