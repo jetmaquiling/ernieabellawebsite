@@ -48,28 +48,12 @@ const NewSection1 = () => {
             <div className={style.main}>
                 <Link  href={`/blog/${mainArticle.id}`} >
                     <div className={style.mainContainer} >
+                        <h2  className={style.label} >Feature Story</h2>
                         <h2 className={style.mainTitle}>{mainArticle.main_title}</h2>
                         <img className={style.mainImage} src={mainArticle.clipboard}/>
                     </div>
                 </Link>
                 
-    
-                <div className={style.subContainer} >
-                    <h5 className={style.label}>FEATURING</h5>
-                    {feature.map((d,index)=>{
-                        if(index <= 2){
-                            return (
-                                <Link key={d.main_title} href={`/blog/${d.id}`}><h4  className={style.subTitle} >{d.main_title}</h4></Link>
-                            )
-                        }
-                        
-                    })}
-                    
-                  
-                </div>
-                
-    
-               
             </div>
       )
     }else{
@@ -79,11 +63,6 @@ const NewSection1 = () => {
                     <Skeleton animation="wave" height={30} />
                     <Skeleton animation="wave" height={30} />
                     <Skeleton animation="wave" height={300} />
-                </div>
-                <div className={style.subContainer} >
-                    <Skeleton animation="wave" height={30} />
-                    <Skeleton animation="wave" height={30} />
-                    <Skeleton animation="wave" height={30} />
                 </div>
             </div>
         )

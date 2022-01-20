@@ -1,15 +1,16 @@
 .main{
     width: 100%;
     max-width: 1200px;
-    display: flex;
     margin: 20px auto;
 }
 
 
 
 .mainContainer{
-    width: 65%;
-    cursor: pointer
+    width: 70%;
+    cursor: pointer;
+    text-align: center;
+    margin: 20px auto;
 }
 
 .mainTitle{
@@ -96,4 +97,7 @@
         padding-bottom: 10px;
     }
     
+    .mainImage{
+        width: 90%;
+    }
 }

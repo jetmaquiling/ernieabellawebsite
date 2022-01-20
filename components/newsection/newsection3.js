@@ -2,21 +2,52 @@ import * as React from "react"
 import Head from 'next/head'
 import * as style from '@/styles/newsection/newsection3.module.css'
 import Link from 'next/link'
+import qs from 'qs'
+import config from '@/config/configuration.json';
+import moment from 'moment';
+import axios from 'axios';
+import Skeleton from '@material-ui/lab/Skeleton';
 
 const NewSection3 = () => {
  
+    const [feature, setFeature] = React.useState([])
+
+    React.useEffect(() => {
+        async function getBlog() { 
+            try{
+                const query = qs.stringify({ _where: { _or:[{"subject": "CAMPAIGN UPDATES"}]} });
+                const {data} = await axios.get(`${config.SERVER_URL}/article-ernie-abellas?${query}`);
+                console.log("Capaign Update",data)
+                setFeature(feature => [...feature, ...data]);
+                setLoad(false)
+                
+            }catch(err){
+                console.log(err)
+            }
+            
+            
+        }
+        getBlog()
+
+    }, [])
+  
   
   return (
         <div className={style.main}>
             <h2  className={style.label} >Campaign Updates</h2>
             <div className={style.articleContainer}>
-                {[1,2,3,4].map((data)=>{
+                {feature.map((data)=>{
                     return (
-                        <div key={data} className={style.articleItem}>
-                            <img className={style.articleImage} src="/Thumbnail/ernieabella.png"/>
-                            <h4 className={style.articleTitle}>De nouvelles règles pour voyager vers la France entrent en vigueur ce samedi</h4>
-                            <p className={style.articleSubTitle}>For Americans who have lost someone to COVID-19 or anything else this year, the holiday season might be an uphill battle. Here's advice on processing the pain.</p>
-                        </div>
+                        <>
+                            <Link href={`/blog/${data.id}`} >
+                                <div key={data} className={style.articleItem}>
+                                    <img className={style.articleImage} src={data.thumbnail_image.url}/>
+                                    <h4 className={style.articleTitle}>{data.main_title}</h4>
+                                    <p className={style.articleSubTitle}>{data.sub_title}</p>
+                                </div>
+                            </Link>
+                        </>
+                        
                     )
                 })}
             

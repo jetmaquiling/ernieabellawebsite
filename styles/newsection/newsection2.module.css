@@ -17,11 +17,20 @@
 .articleItem{
     width: 33%;
     padding: 10px;
-    cursor: pointer
+    cursor: pointer;
+}
+
+
+.articleImageBox{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
 }
 
 .articleImage{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .articleSubject{
@@ -40,6 +49,9 @@
     text-decoration: underline;
 }
 
+.author{
+    font-weight: 400;
+}
 
 
 @media only screen and (max-width: 800px){
