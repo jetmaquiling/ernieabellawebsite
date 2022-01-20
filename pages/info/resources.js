@@ -52,7 +52,7 @@ export default function BlogPage({article}) {
         setBlog({})
         async function getBlog() { 
             try{
-                const {data} = await axios.get(`${config.SERVER_URL}/article-ernie-abellas/7`);
+                const {data} = await axios.get(`${config.SERVER_URL}/article-ernie-abellas/13`);
                 setBlog(data)
                 const url = `"${data.main_title.replaceAll(' ', '%20')}"%0ABy%20${data.author.replaceAll(' ', '%20')}%0D%0A${data.seo_description.replaceAll(' ', '%20')}`
                 setBlog({...data, 
@@ -126,8 +126,6 @@ export default function BlogPage({article}) {
                         </a> 
 
                     </div>
-
-                    <h6 className={styles.subject}>{blog.subject}</h6>
                     <h1 className={styles.title}>{blog.main_title}</h1>
                     
 
@@ -136,10 +134,9 @@ export default function BlogPage({article}) {
                 <div className={styles.sectionContainer}>
                     <div  className={styles.sectionA}>
                         <h2 className={styles.subtitle}>{blog.sub_title}</h2>
-                        <h6 className={styles.author}>By {blog.author}</h6>
-                        <h6 className={styles.time}>{moment(blog.published_at).format('MM/DD/YYYY h:mm a')} ACT</h6>
+                        <h6 className={styles.time}>Updated at {moment(blog.published_at).format('MM/DD/YYYY h:mm a')} ACT</h6>
                         <div className={styles.content} dangerouslySetInnerHTML={{__html: `${blog.main_body}`}} />
-
+                        <div></div>
                     </div>
 
                     <div  className={styles.sectionB}>

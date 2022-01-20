@@ -48,7 +48,7 @@ const NavigationV1 = ({pos,open, setOpen, header}) => {
               </div>
 
               <div  className={style.buttonBox}>
-                <Link href="/info/resources"><h4 className={style.h4animate}>Resources</h4></Link>
+                <Link href="/info/resources"><h4 className={style.h4animate}>Printables</h4></Link>
               </div>
               
              

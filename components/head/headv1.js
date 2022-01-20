@@ -52,7 +52,11 @@ const HeadV1 = ({pos, open, setOpen}) => {
                 </div>
                 </a>
 
-            
+                <Link href="/info/resources">
+                <div  className={style.buttonBox}  >
+                  <h4 className={style.buttonFont}>Printables</h4>
+                </div>
+                </Link>
 
              
                 
