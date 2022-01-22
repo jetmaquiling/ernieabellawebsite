@@ -84,7 +84,7 @@ export default function CarouselComponent ({openVideo,setOpenVideo}) {
                                 The PHILIPPINE CENTURY, Change can happen OVERNIGHT!
                         </p> */}
                         <div className={style.buttoncontainer}>
-                        <Link href="/info/platform"><h4 className={style.button} >LEARN MORE</h4></Link>
+                        <Link href="/info/program"><h4 className={style.button} >LEARN MORE</h4></Link>
                         {/* <PlayCircleOutlineIcon onClick={()=>toggle("https://www.youtube.com/embed/Hh5NoTvzDQY")} style={{fontSize: '45px'}} className={style.youtubeButton}/> */}
                         </div>
                     </div>
