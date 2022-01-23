@@ -14,19 +14,19 @@ const HomeSection2 = () => {
               target="_blank"
               className={`${style.buttonBox} ${style.buttonBox1}`}
             >
-              <img src="/Images/JoinB.jpg" className={style.imageBox} />
+              <img src="/Images/JoinBT.JPG" className={style.imageBox} />
             </a>
           </Link>
 
           <Link href="/info/program">
             <div className={`${style.buttonBox} ${style.buttonBox2}`}>
-              <img src="/Images/PrioritiesB.jpg" className={style.imageBox} />
+              <img src="/Images/PrioritiesBT.JPG" className={style.imageBox} />
             </div>
           </Link>
 
           <Link href="/blog">
             <div className={`${style.buttonBox} ${style.buttonBox3}`}>
-              <img src="/Images/PressB.jpg" className={style.imageBox} />
+              <img src="/Images/PressBT.JPG" className={style.imageBox} />
             </div>
           </Link>
         </div>
