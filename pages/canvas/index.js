@@ -7,7 +7,7 @@ import { useRef, useState } from "react";
 import ThumbUpAltOutlinedIcon from "@material-ui/icons/ThumbUpAltOutlined";
 import ChatBubbleOutlineIcon from "@material-ui/icons/ChatBubbleOutline";
 import ReplyIcon from "@material-ui/icons/Reply";
-
+import Head from "next/head";
 export default function Canvas() {
   const exportRef = useRef();
   const [enableOverflow, setOverflow] = useState(true); // for demo purpose
