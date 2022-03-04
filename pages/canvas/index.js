@@ -18,8 +18,26 @@ export default function Canvas() {
   const [vertical, setVertical] = useState(1);
   const [scale, setScale] = useState(1);
 
+  function onChrome() {
+    const url = "https://ernieabella.com/canvas/";
+    window.open("googlechrome://navigate?url=" + url, "_system");
+  }
+
   return (
     <div>
+      <Head>
+        <title>Canvas - Ernie Abella</title>
+        <meta
+          name="description"
+          content="Support the campaign by setting up your profile picture with campaign overlay."
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Canvas - Easily Set Up Profile Picture- Ernie Abell BAGONG PILIPINAS"
+        />
+        <meta property="og:image" content="./Thumbnail/ernieabella.png" />
+      </Head>
       <HeadV2 backdrop={true} />
       {/* DO NOT TOUCH */}
 
