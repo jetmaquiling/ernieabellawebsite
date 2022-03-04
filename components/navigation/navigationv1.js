@@ -75,13 +75,13 @@ const NavigationV1 = ({ pos, open, setOpen, header }) => {
         </div>
 
         <div className={style.buttonBox}>
-          <Link href="/info/donate">
+          <Link href="/canvas">
             <h4 className={style.h4animate}>Canvas</h4>
           </Link>
         </div>
 
         <div className={style.specialbuttonBox}>
-          <Link href="/info/canvas">
+          <Link href="/info/donate">
             <h4 className={style.specialh4animate}>Donate</h4>
           </Link>
         </div>
