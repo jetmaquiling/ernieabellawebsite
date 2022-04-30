@@ -137,10 +137,13 @@ const Countdown = () => {
               <h4 className={style.h4animate}>{"View Location >"}</h4>
             </div>
           </a>
-
-          <div onClick={share} className={`${style.buttonBox} `}>
-            <h4 className={style.h4animate}>{"Share >"}</h4>
-          </div>
+          <a
+            href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`}
+          >
+            <div onClick={share} className={`${style.buttonBox} `}>
+              <h4 className={style.h4animate}>{"Share >"}</h4>
+            </div>
+          </a>
         </div>
       </div>
       <div className={style.infoContainer}>
