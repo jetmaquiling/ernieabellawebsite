@@ -69,7 +69,7 @@ const Countdown = () => {
           property="og:title"
           content="Pagtitipon Para Sa Pambansang Pagbabago"
         />
-        <meta property="og:image" content="./Thumbnail/event.png" />
+        <meta property="og:image" content="./Thumbnail/event.jpg" />
       </Head>
 
       <div className={style.logoBox}>
