@@ -35,9 +35,11 @@ const FooterV1 = () => {
               <TwitterIcon style={{ color: "#fff", fontSize: "30px" }} />
             </div>
           </Link>
-          <div className={style.socialBox}>
-            <YouTubeIcon style={{ color: "#fff", fontSize: "30px" }} />
-          </div>
+          <Link href="https://www.youtube.com/channel/UCL70U91ctJvZ438uKEq_NeA">
+            <div className={style.socialBox}>
+              <YouTubeIcon style={{ color: "#fff", fontSize: "30px" }} />
+            </div>
+          </Link>
         </div>
       </div>
 
