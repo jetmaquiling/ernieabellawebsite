@@ -1,7 +1,7 @@
+/* eslint-disable @next/next/link-passhref */
 import * as React from "react";
 import * as style from "@/styles/caveat/countdown.module.css";
 import FooterV1 from "@/components/footer/footerv1";
-import FooterV2 from "@/components/footer/footerv2";
 import { useCountdown } from "@/components/useCountdown";
 import Link from "next/link";
 import moment from "moment";
@@ -129,18 +129,15 @@ const Countdown = () => {
           </div>
         </div>
         <div className={style.buttonContainer}>
-          <Link
-            href="https://www.google.com/maps/place/Abenida+Maria+Orosa,+Ermita,+Maynila,+1000+Kalakhang+Maynila/@14.5843949,120.9793563,19z/data=!3m1!4b1!4m5!3m4!1s0x3397ca247033c5ad:0x57ef04d73a118ff2!8m2!3d14.5843936!4d120.9799034"
-            target="_blank"
-          >
+          <Link href="https://www.google.com/maps/place/Abenida+Maria+Orosa,+Ermita,+Maynila,+1000+Kalakhang+Maynila/@14.5843949,120.9793563,19z/data=!3m1!4b1!4m5!3m4!1s0x3397ca247033c5ad:0x57ef04d73a118ff2!8m2!3d14.5843936!4d120.9799034">
             <div className={`${style.buttonBox} `}>
               <h4 className={style.h4animate}>{"View Location >"}</h4>
             </div>
           </Link>
           <Link
-            href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`}
+            href={`https://www.facebook.com/sharer/sharer.php?u=${"https://ernieabella.com/info/event/"}`}
           >
-            <div onClick={share} className={`${style.buttonBox} `}>
+            <div className={`${style.buttonBox} `}>
               <h4 className={style.h4animate}>{"Share >"}</h4>
             </div>
           </Link>
