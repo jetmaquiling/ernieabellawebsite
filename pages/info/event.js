@@ -5,6 +5,7 @@ import FooterV2 from "@/components/footer/footerv2";
 import { useCountdown } from "@/components/useCountdown";
 import Link from "next/link";
 import moment from "moment";
+import Head from "next/head";
 
 const Countdown = () => {
   const [days, hours, minutes, seconds] = useCountdown(
@@ -53,8 +54,30 @@ const Countdown = () => {
 
   return (
     <div className={style.main}>
+      <Head>
+        <title>Pagtitipon Para Sa Pambansang Pagbabago</title>
+        <meta
+          name="description"
+          content="There’s still time! On May 3, I encourage you to attend his rally.
+            Let’s give him a chance to be heard by more Filipinos. Then we will
+            be enlightened and we will understand why he is running for
+            president, we will be excited with his vision, we will feel
+            genuinely involved with his plans."
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Pagtitipon Para Sa Pambansang Pagbabago"
+        />
+        <meta property="og:image" content="./Thumbnail/event.png" />
+      </Head>
+
       <div className={style.logoBox}>
         <img src="/Logo/LogoWhite.png" className={style.logo} />
+      </div>
+
+      <div className={style.logoBox}>
+        <img src="/Images/event.jpg" className={style.logo} />
       </div>
       <p className={style.subtitle}>
         Pagtitipon Para Sa <b>Pambansang Pagbabago</b>
@@ -144,6 +167,7 @@ const Countdown = () => {
           </div>
         </div>
       </div>
+
       <div className={style.infoContainer}>
         <div className={style.info}>
           <div className={style.logoBox}>
