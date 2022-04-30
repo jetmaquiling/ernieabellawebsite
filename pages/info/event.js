@@ -129,21 +129,21 @@ const Countdown = () => {
           </div>
         </div>
         <div className={style.buttonContainer}>
-          <a
+          <Link
             href="https://www.google.com/maps/place/Abenida+Maria+Orosa,+Ermita,+Maynila,+1000+Kalakhang+Maynila/@14.5843949,120.9793563,19z/data=!3m1!4b1!4m5!3m4!1s0x3397ca247033c5ad:0x57ef04d73a118ff2!8m2!3d14.5843936!4d120.9799034"
             target="_blank"
           >
             <div className={`${style.buttonBox} `}>
               <h4 className={style.h4animate}>{"View Location >"}</h4>
             </div>
-          </a>
-          <a
+          </Link>
+          <Link
             href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`}
           >
             <div onClick={share} className={`${style.buttonBox} `}>
               <h4 className={style.h4animate}>{"Share >"}</h4>
             </div>
-          </a>
+          </Link>
         </div>
       </div>
       <div className={style.infoContainer}>
